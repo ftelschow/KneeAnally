@@ -11,7 +11,7 @@ i <- as.numeric(args[[2]])
 
 library(MASS)
 library(expm)
-library(KneeAnally)
+library(KneeMotionAnalytics)
 
 # Change to your path you want to save the simulations
 path = "/home/drtea/Research/Rpackages/KneeAnally/Reproduce_Simulations_Figures_article"

@@ -6,7 +6,7 @@
 #
 ################################################################################
 
-require(KneeAnally)
+require(KneeMotionAnalytics)
 rm(list = ls())     # clear workspace
 
 #################################### Set Constants #############################

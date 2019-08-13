@@ -2,150 +2,150 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 NumMat2armaMat <- function(x) {
-    .Call(`_KneeAnally_NumMat2armaMat`, x)
+    .Call(`_KneeMotionAnalytics_NumMat2armaMat`, x)
 }
 
 armaMat2NumMat <- function(x) {
-    .Call(`_KneeAnally_armaMat2NumMat`, x)
+    .Call(`_KneeMotionAnalytics_armaMat2NumMat`, x)
 }
 
 QuatMultC <- function(q1, q2) {
-    .Call(`_KneeAnally_QuatMultC`, q1, q2)
+    .Call(`_KneeMotionAnalytics_QuatMultC`, q1, q2)
 }
 
 QuatMultC2 <- function(q1, q2) {
-    .Call(`_KneeAnally_QuatMultC2`, q1, q2)
+    .Call(`_KneeMotionAnalytics_QuatMultC2`, q1, q2)
 }
 
 QuatInvC <- function(q) {
-    .Call(`_KneeAnally_QuatInvC`, q)
+    .Call(`_KneeMotionAnalytics_QuatInvC`, q)
 }
 
 QuatInvC2 <- function(q) {
-    .Call(`_KneeAnally_QuatInvC2`, q)
+    .Call(`_KneeMotionAnalytics_QuatInvC2`, q)
 }
 
 Rot2EulerC <- function(R) {
-    .Call(`_KneeAnally_Rot2EulerC`, R)
+    .Call(`_KneeMotionAnalytics_Rot2EulerC`, R)
 }
 
 Euler2QuatCe <- function(angle, coord) {
-    .Call(`_KneeAnally_Euler2QuatCe`, angle, coord)
+    .Call(`_KneeMotionAnalytics_Euler2QuatCe`, angle, coord)
 }
 
 Euler2QuatC <- function(angles) {
-    .Call(`_KneeAnally_Euler2QuatC`, angles)
+    .Call(`_KneeMotionAnalytics_Euler2QuatC`, angles)
 }
 
 Quat2RotC <- function(q) {
-    .Call(`_KneeAnally_Quat2RotC`, q)
+    .Call(`_KneeMotionAnalytics_Quat2RotC`, q)
 }
 
 Rot2QuatC <- function(R) {
-    .Call(`_KneeAnally_Rot2QuatC`, R)
+    .Call(`_KneeMotionAnalytics_Rot2QuatC`, R)
 }
 
 IntrinsicDistSO3C <- function(q, p) {
-    .Call(`_KneeAnally_IntrinsicDistSO3C`, q, p)
+    .Call(`_KneeMotionAnalytics_IntrinsicDistSO3C`, q, p)
 }
 
 ExpSO3C <- function(A) {
-    .Call(`_KneeAnally_ExpSO3C`, A)
+    .Call(`_KneeMotionAnalytics_ExpSO3C`, A)
 }
 
 LogSO3C <- function(R) {
-    .Call(`_KneeAnally_LogSO3C`, R)
+    .Call(`_KneeMotionAnalytics_LogSO3C`, R)
 }
 
 Vec2screwMC <- function(xx, yy, zz) {
-    .Call(`_KneeAnally_Vec2screwMC`, xx, yy, zz)
+    .Call(`_KneeMotionAnalytics_Vec2screwMC`, xx, yy, zz)
 }
 
 ScrewM2VecC <- function(A) {
-    .Call(`_KneeAnally_ScrewM2VecC`, A)
+    .Call(`_KneeMotionAnalytics_ScrewM2VecC`, A)
 }
 
 distFT1C <- function(f, g) {
-    .Call(`_KneeAnally_distFT1C`, f, g)
+    .Call(`_KneeMotionAnalytics_distFT1C`, f, g)
 }
 
 distFT2C <- function(f, g) {
-    .Call(`_KneeAnally_distFT2C`, f, g)
+    .Call(`_KneeMotionAnalytics_distFT2C`, f, g)
 }
 
 distFTC <- function(f, g) {
-    .Call(`_KneeAnally_distFTC`, f, g)
+    .Call(`_KneeMotionAnalytics_distFTC`, f, g)
 }
 
 OptPosQuatC <- function(A, qRef) {
-    .Call(`_KneeAnally_OptPosQuatC`, A, qRef)
+    .Call(`_KneeMotionAnalytics_OptPosQuatC`, A, qRef)
 }
 
 ProjectiveMeanC <- function(L, MaxIt, err) {
-    .Call(`_KneeAnally_ProjectiveMeanC`, L, MaxIt, err)
+    .Call(`_KneeMotionAnalytics_ProjectiveMeanC`, L, MaxIt, err)
 }
 
 RotEstimC <- function(A, B) {
-    .Call(`_KneeAnally_RotEstimC`, A, B)
+    .Call(`_KneeMotionAnalytics_RotEstimC`, A, B)
 }
 
 GeodesicInterpolationC <- function(f, times, new_times) {
-    .Call(`_KneeAnally_GeodesicInterpolationC`, f, times, new_times)
+    .Call(`_KneeMotionAnalytics_GeodesicInterpolationC`, f, times, new_times)
 }
 
 optimV <- function(f, g, V, times_g, b, R) {
-    .Call(`_KneeAnally_optimV`, f, g, V, times_g, b, R)
+    .Call(`_KneeMotionAnalytics_optimV`, f, g, V, times_g, b, R)
 }
 
 timeWarp <- function(f, g, b) {
-    .Call(`_KneeAnally_timeWarp`, f, g, b)
+    .Call(`_KneeMotionAnalytics_timeWarp`, f, g, b)
 }
 
 timeWarp2 <- function(f, g, factorN2M, b) {
-    .Call(`_KneeAnally_timeWarp2`, f, g, factorN2M, b)
+    .Call(`_KneeMotionAnalytics_timeWarp2`, f, g, factorN2M, b)
 }
 
 rSampleExp <- function(x, y, z) {
-    .Call(`_KneeAnally_rSampleExp`, x, y, z)
+    .Call(`_KneeMotionAnalytics_rSampleExp`, x, y, z)
 }
 
 array2cube <- function(myArray) {
-    .Call(`_KneeAnally_array2cube`, myArray)
+    .Call(`_KneeMotionAnalytics_array2cube`, myArray)
 }
 
 PermTestLoop <- function(M, dataAligned, perm, permC) {
-    .Call(`_KneeAnally_PermTestLoop`, M, dataAligned, perm, permC)
+    .Call(`_KneeMotionAnalytics_PermTestLoop`, M, dataAligned, perm, permC)
 }
 
 PermTest2Loop <- function(M, dataAligned, perm, permC) {
-    .Call(`_KneeAnally_PermTest2Loop`, M, dataAligned, perm, permC)
+    .Call(`_KneeMotionAnalytics_PermTest2Loop`, M, dataAligned, perm, permC)
 }
 
 PermTest3Loop <- function(M, dataAligned, perm, permC, N2Mfac, b) {
-    .Call(`_KneeAnally_PermTest3Loop`, M, dataAligned, perm, permC, N2Mfac, b)
+    .Call(`_KneeMotionAnalytics_PermTest3Loop`, M, dataAligned, perm, permC, N2Mfac, b)
 }
 
 TestC <- function(a, b, N) {
-    .Call(`_KneeAnally_TestC`, a, b, N)
+    .Call(`_KneeMotionAnalytics_TestC`, a, b, N)
 }
 
 Test <- function(v) {
-    .Call(`_KneeAnally_Test`, v)
+    .Call(`_KneeMotionAnalytics_Test`, v)
 }
 
 rcpparma_hello_world <- function() {
-    .Call(`_KneeAnally_rcpparma_hello_world`)
+    .Call(`_KneeMotionAnalytics_rcpparma_hello_world`)
 }
 
 rcpparma_outerproduct <- function(x) {
-    .Call(`_KneeAnally_rcpparma_outerproduct`, x)
+    .Call(`_KneeMotionAnalytics_rcpparma_outerproduct`, x)
 }
 
 rcpparma_innerproduct <- function(x) {
-    .Call(`_KneeAnally_rcpparma_innerproduct`, x)
+    .Call(`_KneeMotionAnalytics_rcpparma_innerproduct`, x)
 }
 
 rcpparma_bothproducts <- function(x) {
-    .Call(`_KneeAnally_rcpparma_bothproducts`, x)
+    .Call(`_KneeMotionAnalytics_rcpparma_bothproducts`, x)
 }
 
