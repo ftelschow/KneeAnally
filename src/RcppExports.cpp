@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // NumMat2armaMat
 arma::mat NumMat2armaMat(NumericMatrix x);
-RcppExport SEXP _KneeAnally_NumMat2armaMat(SEXP xSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_NumMat2armaMat(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // armaMat2NumMat
 NumericMatrix armaMat2NumMat(arma::mat x);
-RcppExport SEXP _KneeAnally_armaMat2NumMat(SEXP xSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_armaMat2NumMat(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -30,7 +30,7 @@ END_RCPP
 }
 // QuatMultC
 NumericVector QuatMultC(NumericVector q1, NumericVector q2);
-RcppExport SEXP _KneeAnally_QuatMultC(SEXP q1SEXP, SEXP q2SEXP) {
+RcppExport SEXP _KneeMotionAnalytics_QuatMultC(SEXP q1SEXP, SEXP q2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -42,7 +42,7 @@ END_RCPP
 }
 // QuatMultC2
 arma::vec QuatMultC2(arma::vec q1, arma::vec q2);
-RcppExport SEXP _KneeAnally_QuatMultC2(SEXP q1SEXP, SEXP q2SEXP) {
+RcppExport SEXP _KneeMotionAnalytics_QuatMultC2(SEXP q1SEXP, SEXP q2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -54,7 +54,7 @@ END_RCPP
 }
 // QuatInvC
 NumericVector QuatInvC(NumericVector q);
-RcppExport SEXP _KneeAnally_QuatInvC(SEXP qSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_QuatInvC(SEXP qSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -65,7 +65,7 @@ END_RCPP
 }
 // QuatInvC2
 arma::vec QuatInvC2(arma::vec q);
-RcppExport SEXP _KneeAnally_QuatInvC2(SEXP qSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_QuatInvC2(SEXP qSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -76,7 +76,7 @@ END_RCPP
 }
 // Rot2EulerC
 NumericVector Rot2EulerC(arma::mat R);
-RcppExport SEXP _KneeAnally_Rot2EulerC(SEXP RSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Rot2EulerC(SEXP RSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -87,7 +87,7 @@ END_RCPP
 }
 // Euler2QuatCe
 arma::vec Euler2QuatCe(double angle, CharacterVector coord);
-RcppExport SEXP _KneeAnally_Euler2QuatCe(SEXP angleSEXP, SEXP coordSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Euler2QuatCe(SEXP angleSEXP, SEXP coordSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -99,7 +99,7 @@ END_RCPP
 }
 // Euler2QuatC
 NumericVector Euler2QuatC(arma::vec angles);
-RcppExport SEXP _KneeAnally_Euler2QuatC(SEXP anglesSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Euler2QuatC(SEXP anglesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -110,7 +110,7 @@ END_RCPP
 }
 // Quat2RotC
 arma::mat Quat2RotC(arma::vec q);
-RcppExport SEXP _KneeAnally_Quat2RotC(SEXP qSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Quat2RotC(SEXP qSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -121,7 +121,7 @@ END_RCPP
 }
 // Rot2QuatC
 arma::vec Rot2QuatC(arma::mat R);
-RcppExport SEXP _KneeAnally_Rot2QuatC(SEXP RSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Rot2QuatC(SEXP RSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -132,7 +132,7 @@ END_RCPP
 }
 // IntrinsicDistSO3C
 double IntrinsicDistSO3C(arma::vec q, arma::vec p);
-RcppExport SEXP _KneeAnally_IntrinsicDistSO3C(SEXP qSEXP, SEXP pSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_IntrinsicDistSO3C(SEXP qSEXP, SEXP pSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -144,7 +144,7 @@ END_RCPP
 }
 // ExpSO3C
 arma::mat ExpSO3C(arma::mat A);
-RcppExport SEXP _KneeAnally_ExpSO3C(SEXP ASEXP) {
+RcppExport SEXP _KneeMotionAnalytics_ExpSO3C(SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -155,7 +155,7 @@ END_RCPP
 }
 // LogSO3C
 arma::mat LogSO3C(arma::mat R);
-RcppExport SEXP _KneeAnally_LogSO3C(SEXP RSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_LogSO3C(SEXP RSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -166,7 +166,7 @@ END_RCPP
 }
 // Vec2screwMC
 arma::mat Vec2screwMC(double xx, double yy, double zz);
-RcppExport SEXP _KneeAnally_Vec2screwMC(SEXP xxSEXP, SEXP yySEXP, SEXP zzSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Vec2screwMC(SEXP xxSEXP, SEXP yySEXP, SEXP zzSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -179,7 +179,7 @@ END_RCPP
 }
 // ScrewM2VecC
 arma::mat ScrewM2VecC(arma::mat A);
-RcppExport SEXP _KneeAnally_ScrewM2VecC(SEXP ASEXP) {
+RcppExport SEXP _KneeMotionAnalytics_ScrewM2VecC(SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -190,7 +190,7 @@ END_RCPP
 }
 // distFT1C
 double distFT1C(arma::mat f, arma::mat g);
-RcppExport SEXP _KneeAnally_distFT1C(SEXP fSEXP, SEXP gSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_distFT1C(SEXP fSEXP, SEXP gSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -202,7 +202,7 @@ END_RCPP
 }
 // distFT2C
 double distFT2C(arma::mat f, arma::mat g);
-RcppExport SEXP _KneeAnally_distFT2C(SEXP fSEXP, SEXP gSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_distFT2C(SEXP fSEXP, SEXP gSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -214,7 +214,7 @@ END_RCPP
 }
 // distFTC
 double distFTC(arma::mat f, arma::mat g);
-RcppExport SEXP _KneeAnally_distFTC(SEXP fSEXP, SEXP gSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_distFTC(SEXP fSEXP, SEXP gSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -226,7 +226,7 @@ END_RCPP
 }
 // OptPosQuatC
 arma::mat OptPosQuatC(arma::mat A, arma::vec qRef);
-RcppExport SEXP _KneeAnally_OptPosQuatC(SEXP ASEXP, SEXP qRefSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_OptPosQuatC(SEXP ASEXP, SEXP qRefSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -238,7 +238,7 @@ END_RCPP
 }
 // ProjectiveMeanC
 arma::vec ProjectiveMeanC(arma::mat L, int MaxIt, double err);
-RcppExport SEXP _KneeAnally_ProjectiveMeanC(SEXP LSEXP, SEXP MaxItSEXP, SEXP errSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_ProjectiveMeanC(SEXP LSEXP, SEXP MaxItSEXP, SEXP errSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -251,7 +251,7 @@ END_RCPP
 }
 // RotEstimC
 arma::mat RotEstimC(arma::mat A, arma::mat B);
-RcppExport SEXP _KneeAnally_RotEstimC(SEXP ASEXP, SEXP BSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_RotEstimC(SEXP ASEXP, SEXP BSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -263,7 +263,7 @@ END_RCPP
 }
 // GeodesicInterpolationC
 NumericMatrix GeodesicInterpolationC(NumericMatrix f, NumericVector times, NumericVector new_times);
-RcppExport SEXP _KneeAnally_GeodesicInterpolationC(SEXP fSEXP, SEXP timesSEXP, SEXP new_timesSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_GeodesicInterpolationC(SEXP fSEXP, SEXP timesSEXP, SEXP new_timesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -276,7 +276,7 @@ END_RCPP
 }
 // optimV
 List optimV(NumericMatrix f, NumericMatrix g, NumericMatrix V, NumericVector times_g, double b, double R);
-RcppExport SEXP _KneeAnally_optimV(SEXP fSEXP, SEXP gSEXP, SEXP VSEXP, SEXP times_gSEXP, SEXP bSEXP, SEXP RSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_optimV(SEXP fSEXP, SEXP gSEXP, SEXP VSEXP, SEXP times_gSEXP, SEXP bSEXP, SEXP RSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -292,7 +292,7 @@ END_RCPP
 }
 // timeWarp
 NumericMatrix timeWarp(NumericMatrix f, NumericMatrix g, double b);
-RcppExport SEXP _KneeAnally_timeWarp(SEXP fSEXP, SEXP gSEXP, SEXP bSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_timeWarp(SEXP fSEXP, SEXP gSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -305,7 +305,7 @@ END_RCPP
 }
 // timeWarp2
 NumericMatrix timeWarp2(NumericMatrix f, NumericMatrix g, int factorN2M, double b);
-RcppExport SEXP _KneeAnally_timeWarp2(SEXP fSEXP, SEXP gSEXP, SEXP factorN2MSEXP, SEXP bSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_timeWarp2(SEXP fSEXP, SEXP gSEXP, SEXP factorN2MSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -319,7 +319,7 @@ END_RCPP
 }
 // rSampleExp
 List rSampleExp(NumericMatrix x, NumericMatrix y, NumericMatrix z);
-RcppExport SEXP _KneeAnally_rSampleExp(SEXP xSEXP, SEXP ySEXP, SEXP zSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_rSampleExp(SEXP xSEXP, SEXP ySEXP, SEXP zSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -332,7 +332,7 @@ END_RCPP
 }
 // array2cube
 arma::cube array2cube(SEXP myArray);
-RcppExport SEXP _KneeAnally_array2cube(SEXP myArraySEXP) {
+RcppExport SEXP _KneeMotionAnalytics_array2cube(SEXP myArraySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -343,7 +343,7 @@ END_RCPP
 }
 // PermTestLoop
 NumericVector PermTestLoop(int M, arma::cube dataAligned, IntegerMatrix perm, IntegerMatrix permC);
-RcppExport SEXP _KneeAnally_PermTestLoop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_PermTestLoop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -357,7 +357,7 @@ END_RCPP
 }
 // PermTest2Loop
 arma::mat PermTest2Loop(int M, arma::cube dataAligned, arma::mat perm, arma::mat permC);
-RcppExport SEXP _KneeAnally_PermTest2Loop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_PermTest2Loop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -371,7 +371,7 @@ END_RCPP
 }
 // PermTest3Loop
 arma::vec PermTest3Loop(int M, arma::cube dataAligned, arma::mat perm, arma::mat permC, int N2Mfac, double b);
-RcppExport SEXP _KneeAnally_PermTest3Loop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP, SEXP N2MfacSEXP, SEXP bSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_PermTest3Loop(SEXP MSEXP, SEXP dataAlignedSEXP, SEXP permSEXP, SEXP permCSEXP, SEXP N2MfacSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -387,7 +387,7 @@ END_RCPP
 }
 // TestC
 arma::vec TestC(int a, int b, int N);
-RcppExport SEXP _KneeAnally_TestC(SEXP aSEXP, SEXP bSEXP, SEXP NSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_TestC(SEXP aSEXP, SEXP bSEXP, SEXP NSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -400,7 +400,7 @@ END_RCPP
 }
 // Test
 int Test(arma::vec v);
-RcppExport SEXP _KneeAnally_Test(SEXP vSEXP) {
+RcppExport SEXP _KneeMotionAnalytics_Test(SEXP vSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -409,92 +409,45 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rcpparma_hello_world
-arma::mat rcpparma_hello_world();
-RcppExport SEXP _KneeAnally_rcpparma_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpparma_hello_world());
-    return rcpp_result_gen;
-END_RCPP
-}
-// rcpparma_outerproduct
-arma::mat rcpparma_outerproduct(const arma::colvec& x);
-RcppExport SEXP _KneeAnally_rcpparma_outerproduct(SEXP xSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpparma_outerproduct(x));
-    return rcpp_result_gen;
-END_RCPP
-}
-// rcpparma_innerproduct
-double rcpparma_innerproduct(const arma::colvec& x);
-RcppExport SEXP _KneeAnally_rcpparma_innerproduct(SEXP xSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpparma_innerproduct(x));
-    return rcpp_result_gen;
-END_RCPP
-}
-// rcpparma_bothproducts
-Rcpp::List rcpparma_bothproducts(const arma::colvec& x);
-RcppExport SEXP _KneeAnally_rcpparma_bothproducts(SEXP xSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(rcpparma_bothproducts(x));
-    return rcpp_result_gen;
-END_RCPP
-}
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_KneeAnally_NumMat2armaMat", (DL_FUNC) &_KneeAnally_NumMat2armaMat, 1},
-    {"_KneeAnally_armaMat2NumMat", (DL_FUNC) &_KneeAnally_armaMat2NumMat, 1},
-    {"_KneeAnally_QuatMultC", (DL_FUNC) &_KneeAnally_QuatMultC, 2},
-    {"_KneeAnally_QuatMultC2", (DL_FUNC) &_KneeAnally_QuatMultC2, 2},
-    {"_KneeAnally_QuatInvC", (DL_FUNC) &_KneeAnally_QuatInvC, 1},
-    {"_KneeAnally_QuatInvC2", (DL_FUNC) &_KneeAnally_QuatInvC2, 1},
-    {"_KneeAnally_Rot2EulerC", (DL_FUNC) &_KneeAnally_Rot2EulerC, 1},
-    {"_KneeAnally_Euler2QuatCe", (DL_FUNC) &_KneeAnally_Euler2QuatCe, 2},
-    {"_KneeAnally_Euler2QuatC", (DL_FUNC) &_KneeAnally_Euler2QuatC, 1},
-    {"_KneeAnally_Quat2RotC", (DL_FUNC) &_KneeAnally_Quat2RotC, 1},
-    {"_KneeAnally_Rot2QuatC", (DL_FUNC) &_KneeAnally_Rot2QuatC, 1},
-    {"_KneeAnally_IntrinsicDistSO3C", (DL_FUNC) &_KneeAnally_IntrinsicDistSO3C, 2},
-    {"_KneeAnally_ExpSO3C", (DL_FUNC) &_KneeAnally_ExpSO3C, 1},
-    {"_KneeAnally_LogSO3C", (DL_FUNC) &_KneeAnally_LogSO3C, 1},
-    {"_KneeAnally_Vec2screwMC", (DL_FUNC) &_KneeAnally_Vec2screwMC, 3},
-    {"_KneeAnally_ScrewM2VecC", (DL_FUNC) &_KneeAnally_ScrewM2VecC, 1},
-    {"_KneeAnally_distFT1C", (DL_FUNC) &_KneeAnally_distFT1C, 2},
-    {"_KneeAnally_distFT2C", (DL_FUNC) &_KneeAnally_distFT2C, 2},
-    {"_KneeAnally_distFTC", (DL_FUNC) &_KneeAnally_distFTC, 2},
-    {"_KneeAnally_OptPosQuatC", (DL_FUNC) &_KneeAnally_OptPosQuatC, 2},
-    {"_KneeAnally_ProjectiveMeanC", (DL_FUNC) &_KneeAnally_ProjectiveMeanC, 3},
-    {"_KneeAnally_RotEstimC", (DL_FUNC) &_KneeAnally_RotEstimC, 2},
-    {"_KneeAnally_GeodesicInterpolationC", (DL_FUNC) &_KneeAnally_GeodesicInterpolationC, 3},
-    {"_KneeAnally_optimV", (DL_FUNC) &_KneeAnally_optimV, 6},
-    {"_KneeAnally_timeWarp", (DL_FUNC) &_KneeAnally_timeWarp, 3},
-    {"_KneeAnally_timeWarp2", (DL_FUNC) &_KneeAnally_timeWarp2, 4},
-    {"_KneeAnally_rSampleExp", (DL_FUNC) &_KneeAnally_rSampleExp, 3},
-    {"_KneeAnally_array2cube", (DL_FUNC) &_KneeAnally_array2cube, 1},
-    {"_KneeAnally_PermTestLoop", (DL_FUNC) &_KneeAnally_PermTestLoop, 4},
-    {"_KneeAnally_PermTest2Loop", (DL_FUNC) &_KneeAnally_PermTest2Loop, 4},
-    {"_KneeAnally_PermTest3Loop", (DL_FUNC) &_KneeAnally_PermTest3Loop, 6},
-    {"_KneeAnally_TestC", (DL_FUNC) &_KneeAnally_TestC, 3},
-    {"_KneeAnally_Test", (DL_FUNC) &_KneeAnally_Test, 1},
-    {"_KneeAnally_rcpparma_hello_world", (DL_FUNC) &_KneeAnally_rcpparma_hello_world, 0},
-    {"_KneeAnally_rcpparma_outerproduct", (DL_FUNC) &_KneeAnally_rcpparma_outerproduct, 1},
-    {"_KneeAnally_rcpparma_innerproduct", (DL_FUNC) &_KneeAnally_rcpparma_innerproduct, 1},
-    {"_KneeAnally_rcpparma_bothproducts", (DL_FUNC) &_KneeAnally_rcpparma_bothproducts, 1},
+    {"_KneeMotionAnalytics_NumMat2armaMat", (DL_FUNC) &_KneeMotionAnalytics_NumMat2armaMat, 1},
+    {"_KneeMotionAnalytics_armaMat2NumMat", (DL_FUNC) &_KneeMotionAnalytics_armaMat2NumMat, 1},
+    {"_KneeMotionAnalytics_QuatMultC", (DL_FUNC) &_KneeMotionAnalytics_QuatMultC, 2},
+    {"_KneeMotionAnalytics_QuatMultC2", (DL_FUNC) &_KneeMotionAnalytics_QuatMultC2, 2},
+    {"_KneeMotionAnalytics_QuatInvC", (DL_FUNC) &_KneeMotionAnalytics_QuatInvC, 1},
+    {"_KneeMotionAnalytics_QuatInvC2", (DL_FUNC) &_KneeMotionAnalytics_QuatInvC2, 1},
+    {"_KneeMotionAnalytics_Rot2EulerC", (DL_FUNC) &_KneeMotionAnalytics_Rot2EulerC, 1},
+    {"_KneeMotionAnalytics_Euler2QuatCe", (DL_FUNC) &_KneeMotionAnalytics_Euler2QuatCe, 2},
+    {"_KneeMotionAnalytics_Euler2QuatC", (DL_FUNC) &_KneeMotionAnalytics_Euler2QuatC, 1},
+    {"_KneeMotionAnalytics_Quat2RotC", (DL_FUNC) &_KneeMotionAnalytics_Quat2RotC, 1},
+    {"_KneeMotionAnalytics_Rot2QuatC", (DL_FUNC) &_KneeMotionAnalytics_Rot2QuatC, 1},
+    {"_KneeMotionAnalytics_IntrinsicDistSO3C", (DL_FUNC) &_KneeMotionAnalytics_IntrinsicDistSO3C, 2},
+    {"_KneeMotionAnalytics_ExpSO3C", (DL_FUNC) &_KneeMotionAnalytics_ExpSO3C, 1},
+    {"_KneeMotionAnalytics_LogSO3C", (DL_FUNC) &_KneeMotionAnalytics_LogSO3C, 1},
+    {"_KneeMotionAnalytics_Vec2screwMC", (DL_FUNC) &_KneeMotionAnalytics_Vec2screwMC, 3},
+    {"_KneeMotionAnalytics_ScrewM2VecC", (DL_FUNC) &_KneeMotionAnalytics_ScrewM2VecC, 1},
+    {"_KneeMotionAnalytics_distFT1C", (DL_FUNC) &_KneeMotionAnalytics_distFT1C, 2},
+    {"_KneeMotionAnalytics_distFT2C", (DL_FUNC) &_KneeMotionAnalytics_distFT2C, 2},
+    {"_KneeMotionAnalytics_distFTC", (DL_FUNC) &_KneeMotionAnalytics_distFTC, 2},
+    {"_KneeMotionAnalytics_OptPosQuatC", (DL_FUNC) &_KneeMotionAnalytics_OptPosQuatC, 2},
+    {"_KneeMotionAnalytics_ProjectiveMeanC", (DL_FUNC) &_KneeMotionAnalytics_ProjectiveMeanC, 3},
+    {"_KneeMotionAnalytics_RotEstimC", (DL_FUNC) &_KneeMotionAnalytics_RotEstimC, 2},
+    {"_KneeMotionAnalytics_GeodesicInterpolationC", (DL_FUNC) &_KneeMotionAnalytics_GeodesicInterpolationC, 3},
+    {"_KneeMotionAnalytics_optimV", (DL_FUNC) &_KneeMotionAnalytics_optimV, 6},
+    {"_KneeMotionAnalytics_timeWarp", (DL_FUNC) &_KneeMotionAnalytics_timeWarp, 3},
+    {"_KneeMotionAnalytics_timeWarp2", (DL_FUNC) &_KneeMotionAnalytics_timeWarp2, 4},
+    {"_KneeMotionAnalytics_rSampleExp", (DL_FUNC) &_KneeMotionAnalytics_rSampleExp, 3},
+    {"_KneeMotionAnalytics_array2cube", (DL_FUNC) &_KneeMotionAnalytics_array2cube, 1},
+    {"_KneeMotionAnalytics_PermTestLoop", (DL_FUNC) &_KneeMotionAnalytics_PermTestLoop, 4},
+    {"_KneeMotionAnalytics_PermTest2Loop", (DL_FUNC) &_KneeMotionAnalytics_PermTest2Loop, 4},
+    {"_KneeMotionAnalytics_PermTest3Loop", (DL_FUNC) &_KneeMotionAnalytics_PermTest3Loop, 6},
+    {"_KneeMotionAnalytics_TestC", (DL_FUNC) &_KneeMotionAnalytics_TestC, 3},
+    {"_KneeMotionAnalytics_Test", (DL_FUNC) &_KneeMotionAnalytics_Test, 1},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_KneeAnally(DllInfo *dll) {
+RcppExport void R_init_KneeMotionAnalytics(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

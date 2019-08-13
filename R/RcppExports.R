@@ -133,19 +133,3 @@ Test <- function(v) {
     .Call(`_KneeMotionAnalytics_Test`, v)
 }
 
-rcpparma_hello_world <- function() {
-    .Call(`_KneeMotionAnalytics_rcpparma_hello_world`)
-}
-
-rcpparma_outerproduct <- function(x) {
-    .Call(`_KneeMotionAnalytics_rcpparma_outerproduct`, x)
-}
-
-rcpparma_innerproduct <- function(x) {
-    .Call(`_KneeMotionAnalytics_rcpparma_innerproduct`, x)
-}
-
-rcpparma_bothproducts <- function(x) {
-    .Call(`_KneeMotionAnalytics_rcpparma_bothproducts`, x)
-}
-
