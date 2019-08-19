@@ -1,21 +1,13 @@
 #################################### Plots Article #############################
 # 
 #  This file generates the Plots from the article "..."
-#  In order to use it please change the working directory to the directory you
-#  saved the git repository.
 #
 ################################################################################
-
 require(KneeMotionAnalytics)
 rm(list = ls())     # clear workspace
 
 #################################### Set Constants #############################
-WD  <- "/home/drtea/Research/Rpackages/KneeAnally/Reproduce_Simulations_Figures_article" # Change to your folder
-
-setwd(WD)
-## Load Wokspace
-load("30Apr2015ResultsFullWalk.RData")
-
+Radian = 180/pi
 
 ###################################### Plots ###################################
 speed  = "Walk"
@@ -29,7 +21,7 @@ alpha = 0.1
 
 ############### Figure 1a)
 V    = c(4,4)
-S    = c(3,4)
+S    = c(1,2)
 side = 1
 
 DATA1 <- AA[[V[1],S[1]]][[side]]
@@ -197,9 +189,7 @@ dev.off()
 
 ############### Plot figures for detecting Kneeling effect for volunteers
 ##### Figure 2,3,4, note that they are put into one pdf.
-setwd("/media/sf_Linux/Research/Projects/2017_AOAS_SCBforKnees/Drafts/pics")
 V     = c(6,6)
-SIDE  = c("Left", "Right")
 alpha = 0.05
 
 speed   = "Walk"
@@ -210,89 +200,18 @@ BBalign = GeodWalkSO3align
 
 times <- seq( 0, 1, length.out=100 )
 
-for(side in 1:2){
-  pdfname <- paste("Side", SIDE[side],"_alpha",100*alpha,"KneeEffect.pdf",sep="")
-  pdf( pdfname,  title = pdfname, width = 13, height = 11 )
-  par( oma = c(0.5, 0.5, 0.5, 1.0),
-       mar = c(4.5, 5.0, 0.5, 0.5) )
-  
-  par( mfrow=c(2,2) )
-  for(v in 1:8){
-    V = c(v,v)
-      
-      ConfBandsTest.expModelHot(
-        dataA = AA, dataB = BB, AAalign, BBalign,
-        V = V, S = c(5,3), SIDE = c(side,side),
-        times      = seq( 0, 1, length.out=100 ),
-        alpha      = alpha,
-        show.plot  = TRUE,
-        show.plot2 = FALSE,
-        Snames     = c("C", "D", "A", "B", "C", "D"),
-        xlab       = "Percentage of gait cycle",
-        ylab       = "Euler Angles [°]",
-        cex.lab    = 2.5,
-        cex.axis   = 1.5
-      )
-      
-      ConfBandsTest.expModelHot(
-        dataA=AA, dataB=BB, AAalign, BBalign,
-        V=V, S=c(5,4), SIDE=c(side,side),
-        times     = seq( 0, 1, length.out=100 ),
-        alpha     = alpha,
-        show.plot = TRUE,
-        show.plot2 = FALSE,
-        Snames    = c("C", "D", "A", "B", "C", "D"),
-        xlab       = "Percentage of gait cycle",
-        ylab       = "Euler Angles [°]",
-        cex.lab    = 2.5,
-        cex.axis   = 1.5
-      )
-      
-      ConfBandsTest.expModelHot(
-        dataA=AA, dataB=BB, AAalign, BBalign,
-        V=V, S=c(6,3), SIDE=c(side,side),
-        times     = seq( 0, 1, length.out=100 ),
-        alpha     = alpha,
-        show.plot = TRUE,
-        show.plot2 = FALSE,
-        Snames    = c("C", "D", "A", "B", "C", "D"),
-        xlab       = "Percentage of gait cycle",
-        ylab       = "Euler Angles [°]",
-        cex.lab    = 2.5,
-        cex.axis   = 1.5
-      )
-      
-      
-      ConfBandsTest.expModelHot(
-        dataA = AA, dataB = BB, AAalign, BBalign,
-        V = V, S = c(6,4), SIDE = c(side,side),
-        times      = seq( 0, 1, length.out=100 ),
-        alpha      = alpha,
-        show.plot  = TRUE,
-        show.plot2 = FALSE,
-        Snames     = c("C", "D", "A", "B", "C", "D"),
-        xlab       = "Percentage of gait cycle",
-        ylab       = "Euler Angles [°]",
-        cex.lab    = 2.5,
-        cex.axis   = 1.5
-      )
-  }
-  dev.off()  
-  }
+pdfname <- paste("SideLeft","_alpha",100*alpha,"KneeEffect.pdf",sep="")
+pdf( pdfname,  title = pdfname, width = 13, height = 11 )
+par( oma = c(0.5, 0.5, 0.5, 1.0),
+     mar = c(4.5, 5.0, 0.5, 0.5) )
 
-##### Plot of SCB test for non kneeling sessions, note that they are put into one pdf.
-for(side in 1:2){
-  pdfname <- paste("Vols_Side", SIDE[side],"_alpha",100*alpha,".pdf",sep="")
-  pdf( pdfname,  title = pdfname, width = 13, height = 11 )
-  par( oma = c(0.5, 0.5, 0.5, 1.0),
-       mar = c(4.5, 5.0, 0.5, 0.5) )
-  
-    for(v in 1:8){
-    V = c(v,v)
+par( mfrow=c(2,2) )
+for(v in 1:8){
+  V = c(v,v)
     
     ConfBandsTest.expModelHot(
       dataA = AA, dataB = BB, AAalign, BBalign,
-      V = V, S = c(3,4), SIDE = c(side,side),
+      V = V, S = c(5,3), SIDE = c(side,side),
       times      = seq( 0, 1, length.out=100 ),
       alpha      = alpha,
       show.plot  = TRUE,
@@ -303,9 +222,76 @@ for(side in 1:2){
       cex.lab    = 2.5,
       cex.axis   = 1.5
     )
-    }
-  dev.off()
+    
+    ConfBandsTest.expModelHot(
+      dataA=AA, dataB=BB, AAalign, BBalign,
+      V=V, S=c(5,4), SIDE=c(side,side),
+      times     = seq( 0, 1, length.out=100 ),
+      alpha     = alpha,
+      show.plot = TRUE,
+      show.plot2 = FALSE,
+      Snames    = c("C", "D", "A", "B", "C", "D"),
+      xlab       = "Percentage of gait cycle",
+      ylab       = "Euler Angles [°]",
+      cex.lab    = 2.5,
+      cex.axis   = 1.5
+    )
+    
+    ConfBandsTest.expModelHot(
+      dataA=AA, dataB=BB, AAalign, BBalign,
+      V=V, S=c(6,3), SIDE=c(side,side),
+      times     = seq( 0, 1, length.out=100 ),
+      alpha     = alpha,
+      show.plot = TRUE,
+      show.plot2 = FALSE,
+      Snames    = c("C", "D", "A", "B", "C", "D"),
+      xlab       = "Percentage of gait cycle",
+      ylab       = "Euler Angles [°]",
+      cex.lab    = 2.5,
+      cex.axis   = 1.5
+    )
+    
+    
+    ConfBandsTest.expModelHot(
+      dataA = AA, dataB = BB, AAalign, BBalign,
+      V = V, S = c(6,4), SIDE = c(side,side),
+      times      = seq( 0, 1, length.out=100 ),
+      alpha      = alpha,
+      show.plot  = TRUE,
+      show.plot2 = FALSE,
+      Snames     = c("C", "D", "A", "B", "C", "D"),
+      xlab       = "Percentage of gait cycle",
+      ylab       = "Euler Angles [°]",
+      cex.lab    = 2.5,
+      cex.axis   = 1.5
+    )
 }
+dev.off()  
+
+##### Plot of SCB test for non kneeling sessions, note that they are put into one pdf.
+pdfname <- paste("Vols_Side", speed,"_alpha",100*alpha,".pdf",sep="")
+pdf( pdfname,  title = pdfname, width = 13, height = 11 )
+par( oma = c(0.5, 0.5, 0.5, 1.0),
+     mar = c(4.5, 5.0, 0.5, 0.5) )
+
+  for(v in 1:8){
+  V = c(v,v)
+  
+  ConfBandsTest.expModelHot(
+    dataA = AA, dataB = BB, AAalign, BBalign,
+    V = V, S = c(3,4), SIDE = c(side,side),
+    times      = seq( 0, 1, length.out=100 ),
+    alpha      = alpha,
+    show.plot  = TRUE,
+    show.plot2 = FALSE,
+    Snames     = c("C", "D", "A", "B", "C", "D"),
+    xlab       = "Percentage of gait cycle",
+    ylab       = "Euler Angles [°]",
+    cex.lab    = 2.5,
+    cex.axis   = 1.5
+  )
+  }
+dev.off()
 
 ############################ Generate table 2 ############################
 Trials = matrix(NA, 8, 4)

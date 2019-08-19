@@ -37,7 +37,7 @@ RotEstim <- function( A, B ){
   list( R = R, mse = sum(A^2) + sum(B^2) - 2*sum(SVD$d*diag(S)))
 }
 
-#'  Using the length loss to find the elements (P,Q) spatially aligning gamma and eta, s.t. gamma = P %*% eta %*% Q
+#'  Using the length loss to find the elements (P,Q) spatially aligning gamma and eta, s.t. $gamma = P eta Q$
 #'
 #' @param A matrix (k x N) containing N vectors in R^k
 #' @param B matrix (k x N) containing N vectors in R^k

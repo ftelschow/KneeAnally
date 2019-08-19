@@ -18,4 +18,5 @@ Depends:
     expm
 Imports: Rcpp (>= 1.0.1)
 LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
+LazyData: true
