@@ -4,6 +4,7 @@
 #
 ################################################################################
 require(KneeMotionAnalytics)
+require(xtable)
 rm(list = ls())     # clear workspace
 
 #################################### Set Constants #############################
@@ -211,12 +212,12 @@ for(v in 1:8){
     
     ConfBandsTest.expModelHot(
       dataA = AA, dataB = BB, AAalign, BBalign,
-      V = V, S = c(5,3), SIDE = c(side,side),
+      V = V, S = c(3,1), SIDE = c(side,side),
       times      = seq( 0, 1, length.out=100 ),
       alpha      = alpha,
       show.plot  = TRUE,
       show.plot2 = FALSE,
-      Snames     = c("C", "D", "A", "B", "C", "D"),
+      Snames     = c("A", "B", "C", "D", "C", "D"),
       xlab       = "Percentage of gait cycle",
       ylab       = "Euler Angles [°]",
       cex.lab    = 2.5,
@@ -225,12 +226,12 @@ for(v in 1:8){
     
     ConfBandsTest.expModelHot(
       dataA=AA, dataB=BB, AAalign, BBalign,
-      V=V, S=c(5,4), SIDE=c(side,side),
+      V=V, S=c(3,2), SIDE=c(side,side),
       times     = seq( 0, 1, length.out=100 ),
       alpha     = alpha,
       show.plot = TRUE,
       show.plot2 = FALSE,
-      Snames    = c("C", "D", "A", "B", "C", "D"),
+      Snames    = c("A", "B", "C", "D", "C", "D"),
       xlab       = "Percentage of gait cycle",
       ylab       = "Euler Angles [°]",
       cex.lab    = 2.5,
@@ -239,12 +240,12 @@ for(v in 1:8){
     
     ConfBandsTest.expModelHot(
       dataA=AA, dataB=BB, AAalign, BBalign,
-      V=V, S=c(6,3), SIDE=c(side,side),
+      V=V, S=c(4,1), SIDE=c(side,side),
       times     = seq( 0, 1, length.out=100 ),
       alpha     = alpha,
       show.plot = TRUE,
       show.plot2 = FALSE,
-      Snames    = c("C", "D", "A", "B", "C", "D"),
+      Snames    = c("A", "B", "C", "D", "C", "D"),
       xlab       = "Percentage of gait cycle",
       ylab       = "Euler Angles [°]",
       cex.lab    = 2.5,
@@ -254,12 +255,12 @@ for(v in 1:8){
     
     ConfBandsTest.expModelHot(
       dataA = AA, dataB = BB, AAalign, BBalign,
-      V = V, S = c(6,4), SIDE = c(side,side),
+      V = V, S = c(4,2), SIDE = c(side,side),
       times      = seq( 0, 1, length.out=100 ),
       alpha      = alpha,
       show.plot  = TRUE,
       show.plot2 = FALSE,
-      Snames     = c("C", "D", "A", "B", "C", "D"),
+      Snames     = c("A", "B", "C", "D", "C", "D"),
       xlab       = "Percentage of gait cycle",
       ylab       = "Euler Angles [°]",
       cex.lab    = 2.5,
@@ -279,12 +280,12 @@ par( oma = c(0.5, 0.5, 0.5, 1.0),
   
   ConfBandsTest.expModelHot(
     dataA = AA, dataB = BB, AAalign, BBalign,
-    V = V, S = c(3,4), SIDE = c(side,side),
+    V = V, S = c(1,2), SIDE = c(side,side),
     times      = seq( 0, 1, length.out=100 ),
     alpha      = alpha,
     show.plot  = TRUE,
     show.plot2 = FALSE,
-    Snames     = c("C", "D", "A", "B", "C", "D"),
+    Snames     = c("A", "B", "C", "D", "C", "D"),
     xlab       = "Percentage of gait cycle",
     ylab       = "Euler Angles [°]",
     cex.lab    = 2.5,
@@ -296,7 +297,7 @@ dev.off()
 ############################ Generate table 2 ############################
 Trials = matrix(NA, 8, 4)
 
-for( v in 1:8 ){for( s in 3:6 ){
+for( v in 1:8 ){for( s in 1:4 ){
   Trials[v,s-2] = length(allGeodWalk[[v,s]][[1]]$data)
 }}
 
